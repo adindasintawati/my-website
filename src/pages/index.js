@@ -1,5 +1,4 @@
 import React from "react";
-
 import Header from "@/components/organism/Header";
 import Experience from "@/components/organism/Experience";
 import Expertise from "@/components/organism/Expertise";
