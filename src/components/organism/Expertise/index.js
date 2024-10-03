@@ -44,24 +44,16 @@ const Expertise = () => {
   return (
     <div className="flex gap-40 bg-black px-[120px] py-[80px]">
       <TextHeading className="text-white" text="Expertise" />
-      <div>
-        {list1.map((item, index) => (
-          <ListExpertiseCard
-            key={index}
-            number={item.number}
-            desc={item.desc}
-          />
-        ))}
-      </div>
-      <div>
-        {list2.map((item, index) => (
-          <ListExpertiseCard
-            key={index}
-            number={item.number}
-            desc={item.desc}
-          />
-        ))}
-      </div>
+      {list1.map((item, index) => (
+        <div key={index}>
+          <ListExpertiseCard number={item.number} desc={item.desc} />
+        </div>
+      ))}
+      {list2.map((item, index) => (
+        <div key={index}>
+          <ListExpertiseCard number={item.number} desc={item.desc} />
+        </div>
+      ))}
     </div>
   );
 };

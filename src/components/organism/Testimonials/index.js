@@ -104,10 +104,9 @@ const Testimonials = () => {
       <TextHeading text="Testimonials" />
       <div className="grid grid-cols-2 gap-20">
         {listTesti1.map((item, index) => (
-          <div className="bg-white rounded-3xl px-20 py-10 w-full">
+          <div key={index} className="bg-white rounded-3xl px-20 py-10 w-full">
             <div className="text-[20px]">
               <ListTestimonialsCard
-                key={index}
                 paragraph={item.desc}
                 textName={item.name}
                 textJobdesk={item.jobDesk}
@@ -117,10 +116,9 @@ const Testimonials = () => {
         ))}
 
         {listTesti2.map((item, index) => (
-          <div className="bg-white rounded-3xl px-20 py-10 w-2/4">
+          <div key={index} className="bg-white rounded-3xl px-20 py-10 w-2/4">
             <div className="text-[20px]">
               <ListTestimonialsCard
-                key={index}
                 paragraph={item.desc}
                 textName={item.name}
                 textJobdesk={item.jobDesk}

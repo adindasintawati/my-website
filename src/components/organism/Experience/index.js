@@ -56,22 +56,24 @@ const Experience = () => {
       <div className="flex justify-between">
         <div className="flex flex-col gap-[80px]">
           {cards1.map((item, index) => (
-            <ListExperienceCard
-              key={index}
-              imageUrl={item.url}
-              desc={item.desc}
-              title={item.title}
-            />
+            <div key={index}>
+              <ListExperienceCard
+                imageUrl={item.url}
+                desc={item.desc}
+                title={item.title}
+              />
+            </div>
           ))}
         </div>
         <div className="flex flex-col gap-[80px] pt-[120px]">
           {cards2.map((item, index) => (
-            <ListExperienceCard
-              key={index}
-              imageUrl={item.url}
-              desc={item.desc}
-              title={item.title}
-            />
+            <div key={index}>
+              <ListExperienceCard
+                imageUrl={item.url}
+                desc={item.desc}
+                title={item.title}
+              />
+            </div>
           ))}
         </div>
       </div>
